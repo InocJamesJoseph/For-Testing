@@ -1,7 +1,7 @@
 <?php 
   include('db_con.php');
     
-  if($_SERVER["REQUEST METHOD"]) == "POST" {
+  if($_SERVER["REQUEST METHOD"] == "POST") {
     $fname = mysqli_real_escape_string($connection, $_POST['first name']);
     $mname = mysqli_real_escape_string($connection, $_POST['middle name']);
     $lname = mysqli_real_escape_string($connection, $_POST['last name']);
@@ -38,4 +38,5 @@
         </form>
     </div>
 </body>
+
 </html>
